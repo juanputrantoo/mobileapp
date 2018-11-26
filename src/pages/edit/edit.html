@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ChangepassPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Enter Your New Full Name</ion-label>
+      <ion-input type="text" [(ngModel)]="nama"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Enter Your New Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Enter Your New Phone Number</ion-label>
+      <ion-input type="number" [(ngModel)]="noTelpon"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Enter Your Old Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Enter Your New Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block (click)="closeModal()" color="gray">Save</button>
+    </div>
+  </ion-list>
+</ion-content>

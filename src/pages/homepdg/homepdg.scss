@@ -1,0 +1,29 @@
+page-homepdg {
+
+}
+ion-navbar{
+
+    .refresh{
+        font-size: 40px!important;
+        color: white;
+        right: 0;
+    }
+}
+
+ion-content{
+
+    ion-card{
+    
+        font-size: 15px!important;
+
+        .menupdg{
+            padding: 5px;
+        }
+
+        .namaMenu{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+}

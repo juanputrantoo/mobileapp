@@ -1,0 +1,42 @@
+
+<ion-header>
+  <ion-navbar></ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked floating>Full Name</ion-label>
+      <ion-input type="text" [(ngModel)]="nama"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked floating>Phone Number</ion-label>
+      <ion-input type="text" [(ngModel)]="noTelpon"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked floating>Address</ion-label>
+      <ion-input type="text" [(ngModel)]="Alamat"></ion-input>
+    </ion-item>
+
+    <div padding text-center>
+      <button ion-button icon-left outline round block (click)="postRegister()" color="gray">
+        Create
+      </button>
+    </div>
+  </ion-list>
+
+</ion-content>
+

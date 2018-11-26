@@ -1,0 +1,40 @@
+<!--
+  Generated template for the TambahmenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navbarpdg">
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>Nama Menu</ion-label>
+    <ion-input type="text" [(ngModel)]="namaMenu"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Harga Menu</ion-label>
+    <ion-input type="text" [(ngModel)]="hargaMenu"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Deskripsi Menu</ion-label>
+    <ion-input type="text" [(ngModel)]="deskripsiMenu"></ion-input>
+  </ion-item>
+
+  <div padding text-center>
+    <ion-item text-center no-lines>
+      <ion-label style="font-style: italic;">Upload Menu</ion-label>
+  </ion-item>
+    <button ion-button (click)="presentActionSheet()" color="itempdg">Upload</button>
+    <button ion-button (click)="uploadImage()" color="itempdg">Submit</button>
+    <img src="{{pathForImage(lastImage)}}" style="width: 100%" [hidden]="lastImage === null">
+  </div>
+</ion-content>

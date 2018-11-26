@@ -1,0 +1,32 @@
+
+
+<ion-content padding>
+  <div text-center>
+    <ion-img padding-top style="width: 300px; height: 280px; margin-top: 20px; background: transparent !important;" src="../../assets/imgs/logomobile.png"></ion-img>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked floating>Email</ion-label>
+      <ion-input [(ngModel)]="username" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked floating>Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+
+    <div padding text-center>
+      <button ion-button icon-left outline round block (click)="login()" color="gray">
+        <ion-icon name="basket"></ion-icon>
+        Login
+      </button>
+    </div>
+    <div>{{message}}</div>
+    <div padding text-center>
+      <a ion-label [navPush]="SignUpButton">Create an account?</a>
+    </div>
+  </ion-list>
+
+</ion-content>
+

@@ -1,0 +1,37 @@
+<!--
+  Generated template for the HomepdgPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navbarpdg">
+    <div text-center>
+    <img src="../../assets/imgs/logomh.svg" style="width: 200px; height: 40px;">
+  </div>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content padding>
+    <ion-card  *ngFor="let menu of menus">
+      <div class="menupdg">
+        <img width="80" height="150S" [src]="domSanitizer.bypassSecurityTrustUrl('data:image/jpeg;base64,' +  menu.fotoMenu)">
+        <ion-list>
+          <ion-label class="namaMenu">{{menu.namaMenu}}</ion-label>
+          <ion-label>{{menu.deskripsiMenu}}</ion-label>
+          <ion-label>Rp {{menu.hargaMenu}}/porsi</ion-label>
+        </ion-list>
+      </div>
+      </ion-card>
+      <ion-fab bottom right [navPush] = "plusmenu">
+        <button ion-fab color="itempdg">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-fab>
+</ion-content>
+
+<ion-nav #content [root]="rootPage"></ion-nav>

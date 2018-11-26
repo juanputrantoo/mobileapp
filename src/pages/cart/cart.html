@@ -1,0 +1,57 @@
+<!--
+  Generated template for the CartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navbar">
+    <ion-title>Cart</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-title>Detail Pesanan</ion-title>
+  <ion-list *ngFor="let key of cartIds">
+      <ion-item>
+          <ion-label>Nama Menu:</ion-label>
+          <ion-label text-right>{{ cart[key].menu.namaMenu }}</ion-label>
+      </ion-item>
+      <ion-item>
+          <ion-label>Jumlah:</ion-label>
+          <ion-icon name="remove-circle" (click)="decrement(cart[key].menu)" color="navbar" item-right></ion-icon>
+          <h2 item-right>{{ cart[key].quantity }}</h2>
+          <ion-icon name="add-circle" (click)="increment(cart[key].menu)" color="navbar" item-right></ion-icon>
+      </ion-item>
+  </ion-list>
+
+  <ion-item></ion-item>
+  <ion-list>
+      <ion-item>
+          <ion-label>Jenis Pembayaran</ion-label>
+          <ion-select [(ngModel)]="pembayaran">
+            <ion-option value="1">Cash</ion-option>
+            <ion-option value="0">MAMA-PAY</ion-option>
+          </ion-select>
+        </ion-item>
+  </ion-list>
+
+
+  <ion-item></ion-item>
+  <ion-list>
+      <ion-item>
+          <ion-label>Jenis Pengambilan</ion-label>
+          <ion-select [(ngModel)]="pengambilan">
+            <ion-option value="0">Delivery</ion-option>
+            <ion-option value="1">Take Away</ion-option>
+          </ion-select>
+        </ion-item>
+  </ion-list>
+  
+  <div padding>
+      <button ion-button block (click)="sendOrder()" [navPush]="notificationpage" color="gray">Order</button>
+  </div>
+</ion-content>

@@ -1,0 +1,78 @@
+page-mainhome {
+  .inner{
+    
+    ion-card{
+      display: table-cell;
+
+      img{
+        padding: 5px;
+      }
+    }
+  }
+}
+
+
+
+.promo {
+  background-color: #EBEDEF;
+
+  .backpromo{
+    background-color: #EBEDEF;
+  }
+
+  img{
+  	width: 380px;
+  	height: 200px;
+  }
+
+
+}
+
+.icnnv{
+  color: white;
+  margin-right: 5px;
+  margin-top: 4px;
+}
+
+.menuhome{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.card-background-page{
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  img{
+    width: 100px;
+    height: 75px;
+    filter: brightness(50%);
+  }
+  .card-title {
+    position: absolute;
+    top: 40%;
+    font-size: 1.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+  }
+}
+.card-title.titlewarung{
+  text-transform: uppercase;
+}
+.imgwarung{
+  filter: brightness(50%);
+}
+
+.menutama{
+  width: 100%;
+  text-align: center;
+  ion-card{
+    background-color: antiquewhite;
+  }
+  
+  
+}
